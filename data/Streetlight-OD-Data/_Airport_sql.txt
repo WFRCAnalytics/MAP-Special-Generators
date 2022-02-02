@@ -1,0 +1,1 @@
+SELECT mode_of_travel, origin_zone_name, destination_zone_name, day_type, day_part, data_period, o_d_traffic_sample_trip_counts, o_d_traffic_calibrated_trip_volume FROM `ut-udot-adap-dev.streetlight_data.udot_personal_spring_2019` WHERE ((origin_zone_name BETWEEN '350060_1' AND '350060_7') OR (destination_zone_name BETWEEN '350060_1' AND '350060_7'))
