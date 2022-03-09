@@ -1,0 +1,37 @@
+Mode of Travel,Intersection Type,Zone ID,Zone Name,Zone Is Pass-Through,Zone Direction (degrees),Zone is Bi-Direction,Day Type,Day Part,Average Daily Zone Traffic (StL Volume),Avg Travel Time (sec),Avg All Travel Time (sec),Avg Trip Length (mi),Avg All Trip Length (mi)
+All Vehicles - StL All Vehicles Volume,Trip Start,82,UofU Brigham City,no,N/A,no,0: All Days (M-Su),0: All Day (12am-12am),177,1684,1712,11.8,11.8
+All Vehicles - StL All Vehicles Volume,Trip Start,82,UofU Brigham City,no,N/A,no,0: All Days (M-Su),1: Early AM (12am-6am),3,2132,2132,11.5,11.5
+All Vehicles - StL All Vehicles Volume,Trip Start,82,UofU Brigham City,no,N/A,no,0: All Days (M-Su),2: Peak AM (6am-10am),12,1934,1946,13.8,13.6
+All Vehicles - StL All Vehicles Volume,Trip Start,82,UofU Brigham City,no,N/A,no,0: All Days (M-Su),3: Mid-Day (10am-3pm),58,1667,1695,10.8,10.9
+All Vehicles - StL All Vehicles Volume,Trip Start,82,UofU Brigham City,no,N/A,no,0: All Days (M-Su),4: Peak PM (3pm-7pm),59,1800,1824,14.2,13.9
+All Vehicles - StL All Vehicles Volume,Trip Start,82,UofU Brigham City,no,N/A,no,0: All Days (M-Su),5: Late PM (7pm-12am),45,1462,1501,9.5,9.7
+All Vehicles - StL All Vehicles Volume,Trip Start,82,UofU Brigham City,no,N/A,no,1: Weekday (M-Th),0: All Day (12am-12am),227,1644,1672,11.3,11.3
+All Vehicles - StL All Vehicles Volume,Trip Start,82,UofU Brigham City,no,N/A,no,1: Weekday (M-Th),1: Early AM (12am-6am),3,2289,2289,11.8,11.8
+All Vehicles - StL All Vehicles Volume,Trip Start,82,UofU Brigham City,no,N/A,no,1: Weekday (M-Th),2: Peak AM (6am-10am),14,1871,1896,12.6,12.3
+All Vehicles - StL All Vehicles Volume,Trip Start,82,UofU Brigham City,no,N/A,no,1: Weekday (M-Th),3: Mid-Day (10am-3pm),67,1586,1629,9.6,9.9
+All Vehicles - StL All Vehicles Volume,Trip Start,82,UofU Brigham City,no,N/A,no,1: Weekday (M-Th),4: Peak PM (3pm-7pm),80,1807,1817,14.1,13.7
+All Vehicles - StL All Vehicles Volume,Trip Start,82,UofU Brigham City,no,N/A,no,1: Weekday (M-Th),5: Late PM (7pm-12am),63,1431,1460,9.4,9.6
+All Vehicles - StL All Vehicles Volume,Trip Start,82,UofU Brigham City,no,N/A,no,2: Weekend Day (Sa-Su),0: All Day (12am-12am),90,1839,1898,14.7,14.6
+All Vehicles - StL All Vehicles Volume,Trip Start,82,UofU Brigham City,no,N/A,no,2: Weekend Day (Sa-Su),1: Early AM (12am-6am),4,1888,1888,10.8,10.8
+All Vehicles - StL All Vehicles Volume,Trip Start,82,UofU Brigham City,no,N/A,no,2: Weekend Day (Sa-Su),2: Peak AM (6am-10am),6,1843,1843,19.0,19.0
+All Vehicles - StL All Vehicles Volume,Trip Start,82,UofU Brigham City,no,N/A,no,2: Weekend Day (Sa-Su),3: Mid-Day (10am-3pm),38,1915,1929,15.2,15.1
+All Vehicles - StL All Vehicles Volume,Trip Start,82,UofU Brigham City,no,N/A,no,2: Weekend Day (Sa-Su),4: Peak PM (3pm-7pm),24,1770,1892,16.0,15.9
+All Vehicles - StL All Vehicles Volume,Trip Start,82,UofU Brigham City,no,N/A,no,2: Weekend Day (Sa-Su),5: Late PM (7pm-12am),18,1758,1864,11.4,11.5
+All Vehicles - StL All Vehicles Volume,Trip End,82,UofU Brigham City,no,N/A,no,0: All Days (M-Su),0: All Day (12am-12am),200,1778,1811,12.7,12.6
+All Vehicles - StL All Vehicles Volume,Trip End,82,UofU Brigham City,no,N/A,no,0: All Days (M-Su),1: Early AM (12am-6am),0,1684,1684,13.0,13.0
+All Vehicles - StL All Vehicles Volume,Trip End,82,UofU Brigham City,no,N/A,no,0: All Days (M-Su),2: Peak AM (6am-10am),26,1720,1745,11.9,12.1
+All Vehicles - StL All Vehicles Volume,Trip End,82,UofU Brigham City,no,N/A,no,0: All Days (M-Su),3: Mid-Day (10am-3pm),76,1894,1928,15.1,14.8
+All Vehicles - StL All Vehicles Volume,Trip End,82,UofU Brigham City,no,N/A,no,0: All Days (M-Su),4: Peak PM (3pm-7pm),70,1736,1763,12.1,12.0
+All Vehicles - StL All Vehicles Volume,Trip End,82,UofU Brigham City,no,N/A,no,0: All Days (M-Su),5: Late PM (7pm-12am),27,1626,1672,8.3,8.3
+All Vehicles - StL All Vehicles Volume,Trip End,82,UofU Brigham City,no,N/A,no,1: Weekday (M-Th),0: All Day (12am-12am),264,1728,1749,12.2,12.0
+All Vehicles - StL All Vehicles Volume,Trip End,82,UofU Brigham City,no,N/A,no,1: Weekday (M-Th),1: Early AM (12am-6am),1,1827,1827,14.7,14.7
+All Vehicles - StL All Vehicles Volume,Trip End,82,UofU Brigham City,no,N/A,no,1: Weekday (M-Th),2: Peak AM (6am-10am),33,1610,1611,10.7,10.6
+All Vehicles - StL All Vehicles Volume,Trip End,82,UofU Brigham City,no,N/A,no,1: Weekday (M-Th),3: Mid-Day (10am-3pm),97,1864,1887,15.0,14.5
+All Vehicles - StL All Vehicles Volume,Trip End,82,UofU Brigham City,no,N/A,no,1: Weekday (M-Th),4: Peak PM (3pm-7pm),99,1696,1719,11.6,11.5
+All Vehicles - StL All Vehicles Volume,Trip End,82,UofU Brigham City,no,N/A,no,1: Weekday (M-Th),5: Late PM (7pm-12am),34,1561,1581,8.1,8.0
+All Vehicles - StL All Vehicles Volume,Trip End,82,UofU Brigham City,no,N/A,no,2: Weekend Day (Sa-Su),0: All Day (12am-12am),91,1961,2061,15.1,15.4
+All Vehicles - StL All Vehicles Volume,Trip End,82,UofU Brigham City,no,N/A,no,2: Weekend Day (Sa-Su),1: Early AM (12am-6am),0,827,827,3.1,3.1
+All Vehicles - StL All Vehicles Volume,Trip End,82,UofU Brigham City,no,N/A,no,2: Weekend Day (Sa-Su),2: Peak AM (6am-10am),12,2131,2224,18.7,20.5
+All Vehicles - StL All Vehicles Volume,Trip End,82,UofU Brigham City,no,N/A,no,2: Weekend Day (Sa-Su),3: Mid-Day (10am-3pm),36,2159,2269,18.1,18.5
+All Vehicles - StL All Vehicles Volume,Trip End,82,UofU Brigham City,no,N/A,no,2: Weekend Day (Sa-Su),4: Peak PM (3pm-7pm),27,1779,1823,13.6,13.2
+All Vehicles - StL All Vehicles Volume,Trip End,82,UofU Brigham City,no,N/A,no,2: Weekend Day (Sa-Su),5: Late PM (7pm-12am),17,1690,1879,7.8,8.2

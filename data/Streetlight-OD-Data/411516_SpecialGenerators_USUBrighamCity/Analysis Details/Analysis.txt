@@ -1,0 +1,35 @@
+Analysis ID: 411516
+Analysis: SpecialGenerators_USUBrighamCity
+Created by: analytics@wfrc.org
+Created on: 2022-03-02
+Organization: UDOT - PPU
+
+Analysis Setup Details:
+Analysis Type: O-D to Pre-set Geography (LBS Trip Data)
+Geography: Census Block Group
+Unit of Measurement: Miles
+Mode of Travel: All Vehicles
+Data Source: Location-Based Services with Pass-through
+Output Type: StL All Vehicles Volume
+
+Analysis Options: 
+Date Range: 12/01/2018-02/28/2019, 03/01/2019-05/31/2019, 06/01/2019-08/31/2019, 09/01/2019-11/30/2019
+
+
+Day Type: 
+0: All Days (M-Su)
+1: Weekday (M-Th)
+2: Weekend Day (Sa-Su)
+
+Day Part: 
+0: All Day (12am-12am)
+1: Early AM (12am-6am)
+2: Peak AM (6am-10am)
+3: Mid-Day (10am-3pm)
+4: Peak PM (3pm-7pm)
+5: Late PM (7pm-12am)
+
+Country: USA
+Metrics Version: R109-M114
+
+Copyright © 2011 - 2021, StreetLight Data, Inc. All rights reserved.
