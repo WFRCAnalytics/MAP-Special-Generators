@@ -1,0 +1,625 @@
+<div>
+    <table>
+        <tr>
+            <td width= "75px;"></td>
+            <td width= "50px;"></td>
+            <td width= "50px;"></td>
+            <td width= "75px;"></td>
+            <td width= "75px;"></td>
+        </tr>
+        <tr>
+            <td>
+                <div style="display: inline; line-height: 125%;" ><strong>Special<br/>Generator:</strong></div>
+            </td>
+            <td colspan="4">
+                <div style="display: inline" id="cmbSpecGen" data-dojo-type="dojox.form.Select"></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div><strong>Map Display Zones:</strong></div>
+            </td>
+            <td colspan="2">
+                <div style="display: inline" id="cmbMapDisplayZone" data-dojo-type="dojox.form.Select"></div>
+            </td>
+            <td>
+                <div id="SG_Zoom"  style="display: flex; justify-content: flex-end">&nbsp;<input type="checkbox" id="chkAutoPan" name="AutoPan" data-dojo-type="dijit/form/CheckBox" checked /><label for="chkAutoPan"><small>&nbsp;Auto Pan</small></label></div>
+            </td>
+        </tr>
+    </table>
+    <br/>
+    <table>
+        <tr>
+            <td style="vertical-align:top" width="160px;">
+                <div><strong>Day-of-Week Group:</strong></div>
+                <div id="divDayTypeSection"></div>
+                <br/>
+                <div><strong>Season:</strong></div>
+                <div id="divDataPerSection"></div>
+            </td>
+            <td style="vertical-align:top">
+                <div><strong>Period:</strong></div>
+                <div id="divDayPartSection"></div>
+                <br/>
+                <div ><strong>Map Display Values:</strong></div>
+                <div id="divVolumeOrPercentSection"></div>
+                <br/><div id="SG_Labels"   style="text-align: right; padding: 1px; display: inline; line-height: 150%;"><input type="checkbox" id="chkLabels"   name="Labels"   data-dojo-type="dijit/form/CheckBox" checked /><label for="chkLabels"><small>&nbsp;Show Labels</small></label></div>
+                <br/>
+            </td>
+        </tr>
+    </table>
+    <br/>
+    <div id="divLegendArea" data-dojo-attach-event="onClick: _showLegend">
+        <table id="tableFY" width="100%;">
+            <tbody>
+                <tr>
+                    <td rowspan=3 width="12%;" align="center"  style="display: none;">
+                        <button data-dojo-attach-event="onClick: _showLegend"><img src="widgets/SpecialGenerators/images/legendicon.png" width="25px;"></button>
+                    </td>
+                    <td colspan=9 align="center">
+                        <div id="LegendName" class="thick thicker">Legend</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="9.8%"><div id="divColor1">&nbsp;</div></td>
+                    <td width="9.8%"><div id="divColor2">&nbsp;</div></td>
+                    <td width="9.8%"><div id="divColor3">&nbsp;</div></td>
+                    <td width="9.8%"><div id="divColor4">&nbsp;</div></td>
+                    <td width="9.8%"><div id="divColor5">&nbsp;</div></td>
+                    <td width="9.8%"><div id="divColor6">&nbsp;</div></td>
+                    <td width="9.8%"><div id="divColor7">&nbsp;</div></td>
+                    <td width="9.8%"><div id="divColor8">&nbsp;</div></td>
+                    <td width="9.8%"><div id="divColor9">&nbsp;</div></td>
+                </tr>
+                <tr>
+                    <td colspan=3><small>low</small></td>
+                    <td colspan=3 align="center"><small>&nbsp;</small></td>
+                    <td colspan=3 align="right"><small>high</small></td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+    <br/>
+    <hr/>
+    <div id="divDetailsTitle" hidden><strong></strong></div>
+    <table width="330px;">
+        <tr>
+            <td width="330px;" align="right">
+                Table values display as: <div style="display: inline" id="cmbTableValues" data-dojo-type="dojox.form.Select"></div>
+            </td>
+        </tr>
+    </table>
+    <!--TPR Code: dayType,dayPart,datapeRiod-->
+
+    <div id="chartDaily"></div>
+
+    <table width="100%">
+        <tr>
+            <td colspan=2 width="25%">
+                <strong>Day Type</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>All Year</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>Fall</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>Winter</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>Spring</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>Summer</strong>
+            </td>
+        </tr>
+        <tr>
+            <td width="13px;">
+                <div id="divLegend_DayType0">&nbsp;</div>
+            </td>
+            <td>
+                All Days
+            </td>
+            <td align="right">
+                <div id = "divTPR001"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR002"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR003"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR004"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR005"></div>
+            </td>
+        </tr>
+        <tr>
+            <td width="13px;">
+                <div id="divLegend_DayType1">&nbsp;</div>
+            </td>
+            <td>
+                Weekdays
+            </td>
+            <td align="right">
+                <div id = "divTPR101"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR102"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR103"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR104"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR105"></div>
+            </td>
+        </tr>
+        <tr>
+            <td width="13px;">
+                <div id="divLegend_DayType2">&nbsp;</div>
+            </td>
+            <td>
+                Weekends
+            </td>
+            <td align="right">
+                <div id = "divTPR201"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR202"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR203"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR204"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR205"></div>
+            </td>
+        </tr>
+    </table>
+    <br/>
+    <div id="divDataPerTitle" align="center"></div>
+    <br/>
+    <!--TPR Code: dayType,dayPart,datapeRiod-->
+    <!--All Year-->
+    <table id="tblDataPer1" width="100%">
+        <tr>
+            <td width="24%" align="left">
+                <strong>Day Type</strong>
+            </td>
+            <td width="16%" align="center">
+                <strong>Early AM</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>AM</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>Midday</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>PM</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>Late PM</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                All Days
+            </td>
+            <td align="right">
+                <div id = "divTPR011"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR021"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR031"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR041"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR051"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Weekdays
+            </td>
+            <td align="right">
+                <div id = "divTPR111"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR121"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR131"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR141"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR151"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Weekends
+            </td>
+            <td align="right">
+                <div id = "divTPR211"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR221"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR231"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR241"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR251"></div>
+            </td>
+        </tr>
+    </table>
+    <!--TPR Code: dayType,dayPart,datapeRiod-->
+    <!--All Year-->
+    <table id="tblDataPer2" width="100%">
+        <tr>
+            <td width="24%" align="left">
+                <strong>Day Type</strong>
+            </td>
+            <td width="16%" align="center">
+                <strong>Early AM</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>AM</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>Midday</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>PM</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>Late PM</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                All Days
+            </td>
+            <td align="right">
+                <div id = "divTPR012"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR022"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR032"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR042"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR052"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Weekdays
+            </td>
+            <td align="right">
+                <div id = "divTPR112"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR122"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR132"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR142"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR152"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Weekends
+            </td>
+            <td align="right">
+                <div id = "divTPR212"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR222"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR232"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR242"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR252"></div>
+            </td>
+        </tr>
+    </table>
+    <!--TPR Code: dayType,dayPart,datapeRiod-->
+    <!--All Year-->
+    <table id="tblDataPer3" width="100%">
+        <tr>
+            <td width="24%" align="left">
+                <strong>Day Type</strong>
+            </td>
+            <td width="16%" align="center">
+                <strong>Early AM</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>AM</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>Midday</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>PM</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>Late PM</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                All Days
+            </td>
+            <td align="right">
+                <div id = "divTPR013"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR023"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR033"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR043"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR053"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Weekdays
+            </td>
+            <td align="right">
+                <div id = "divTPR113"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR123"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR133"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR143"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR153"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Weekends
+            </td>
+            <td align="right">
+                <div id = "divTPR213"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR223"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR233"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR243"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR253"></div>
+            </td>
+        </tr>
+    </table>
+    <!--TPR Code: dayType,dayPart,datapeRiod-->
+    <!--All Year-->
+    <table id="tblDataPer4" width="100%">
+        <tr>
+            <td width="24%" align="left">
+                <strong>Day Type</strong>
+            </td>
+            <td width="16%" align="center">
+                <strong>Early AM</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>AM</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>Midday</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>PM</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>Late PM</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                All Days
+            </td>
+            <td align="right">
+                <div id = "divTPR014"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR024"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR034"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR044"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR054"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Weekdays
+            </td>
+            <td align="right">
+                <div id = "divTPR114"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR124"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR134"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR144"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR154"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Weekends
+            </td>
+            <td align="right">
+                <div id = "divTPR214"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR224"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR234"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR244"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR254"></div>
+            </td>
+        </tr>
+    </table>
+    <!--TPR Code: dayType,dayPart,datapeRiod-->
+    <!--All Year-->
+    <table id="tblDataPer5" width="100%">
+        <tr>
+            <td width="24%" align="left">
+                <strong>Day Type</strong>
+            </td>
+            <td width="16%" align="center">
+                <strong>Early AM</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>AM</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>Midday</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>PM</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>Late PM</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                All Days
+            </td>
+            <td align="right">
+                <div id = "divTPR015"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR025"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR035"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR045"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR055"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Weekdays
+            </td>
+            <td align="right">
+                <div id = "divTPR115"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR125"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR135"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR145"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR155"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Weekends
+            </td>
+            <td align="right">
+                <div id = "divTPR215"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR225"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR235"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR245"></div>
+            </td>
+            <td align="right">
+                <div id = "divTPR255"></div>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td width="40px;">
+                <div id="divTableHighlightLegend">&nbsp;</div>
+            </td>
+            <td>
+                &nbsp; - currently mapped values
+            </td>
+        </tr>
+    </table>
+  </div>
